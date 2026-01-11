@@ -1,3 +1,5 @@
+
+
 const BASE_URL = "https://api.coingecko.com/api/v3";
 
 const fetchCrypto = async () => {
@@ -11,3 +13,5 @@ const fetchCrypto = async () => {
 
     return response.json();
 }
+
+export default fetchCrypto;
