@@ -1,5 +1,5 @@
 import React from 'react'
-import { formatPrice } from '../utils/formatter'
+import { formatMarketCap, formatPrice } from '../utils/formatter'
 
 const CryptoCard = ({ crypto }) => {
   return (
@@ -20,6 +20,18 @@ const CryptoCard = ({ crypto }) => {
             <p className={`change ${crypto.price_change_percentage_24h >= 0 ? "positive" : "negative"}`}>
                {crypto.price_change_percentage_24h >= 0 ? "↑" : "↓"} {Math.abs(crypto.price_change_percentage_24h).toFixed(2)}
             </p>
+        </div>
+
+        <div className="crypto-stats">
+            <div className="stat">
+                <span className='stat-label'>Market Cap</span>
+                <span className="stat-value">${formatMarketCap(crypto.market_cap)}</span>
+            </div>
+
+            <div className="stat">
+                <span className='stat-label'>Volume Cap</span>
+                <span className="stat-value">${formatMarketCap(crypto.total_volume)}</span>
+            </div>
         </div>
     </div>
   )
