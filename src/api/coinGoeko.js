@@ -26,4 +26,17 @@ export const fetchCryptoData = async (id) => {
     return response.json();
 }
 
+export const fetchChartData = async (id) => {
+    const response = await fetch(
+        `${BASE_URL}/coins/${id}/market_chart?vs_currency=usd&days=7`,
+    );
+
+    if(!response.ok){
+        throw new Error("Failed to fetch cryptos");
+    };
+
+    return response.json();
+}
+
+
 export default fetchCrypto;
