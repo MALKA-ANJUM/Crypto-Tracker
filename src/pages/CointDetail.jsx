@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { fetchChartData, fetchCryptoData } from '../api/coinGoeko';
-import { formatPrice } from '../utils/formatter';
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import { formatMarketCap, formatPrice } from '../utils/formatter';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const CointDetail = () => {
 	const { id } = useParams();
@@ -132,6 +132,14 @@ const CointDetail = () => {
 								stroke='#9ca3af'
 								domain={["auto", "auto"]}/>
 
+							<Tooltip
+								contentStyle={{
+									backgroundColor: "rgba(20, 20, 40, 0.95)",
+									border: "1px solid rgba(255, 255, 255, 0.1)",
+									borderRadius: "8px",
+									color: "#e0e0e0"
+								}} />
+
 							<Line 
 								dataKey="price" 
 								type="monotone"
@@ -141,6 +149,37 @@ const CointDetail = () => {
 							/>
 						</LineChart>
 					</ResponsiveContainer>
+				</div>
+
+				<div className="stats-grid">
+					<div className="stat-card">
+						<div className="stat-label">Market Cap</div>
+						<div className="stat-value">
+							${formatMarketCap(coin.market_data.market_cap.usd)}
+						</div>
+					</div>
+
+					<div className="stat-card">
+						<div className="stat-label">Volume (24h)</div>
+						<div className="stat-value">
+							${formatMarketCap(coin.market_data.total_volume.usd)}
+						</div>
+					</div>
+
+					<div className="stat-card">
+						<div className="stat-label">Circulating Supply</div>
+						<div className="stat-value">
+							{ coin.market_data.circulating_supply?.toLocaleString() || "N/A" }
+						</div>
+					</div>
+
+					<div className="stat-card">
+						<div className="stat-label">Total Supply</div>
+						<div className="stat-value">
+							{coin.market_data.total_supply?.toLocaleString() || "N/A"}
+						</div>
+					</div>
+
 				</div>
 
 			</div>

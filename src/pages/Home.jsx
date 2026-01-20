@@ -72,7 +72,6 @@ const Home = () => {
 				</div>
 			</div>
 
-
 			<div className="controls">
 				<div className="filter-group">
 					<label htmlFor="">Sort by:</label>
