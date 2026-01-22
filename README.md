@@ -1,31 +1,47 @@
-🚀 Crypto Tracker
+# 🚀 Crypto Tracker
 
-A modern Crypto Price Tracking Website built with React.js that displays real-time cryptocurrency market data using the CoinGecko public API. The application allows users to view live prices, market capitalization, and price changes of top cryptocurrencies in USD.
+Crypto Tracker is a modern and responsive web application built with **React.js** that displays real-time cryptocurrency market data. It uses the **CoinGecko Public API** to show live prices, market capitalization, and 24-hour price changes of top cryptocurrencies in USD.
 
-📌 Project Overview
+---
 
-Crypto Tracker is a lightweight and responsive web application designed to fetch and display up-to-date cryptocurrency market information. It consumes an open-source API and renders dynamic data efficiently using React hooks.
+## 📌 Project Overview
 
-This project demonstrates:
+Crypto Tracker is a lightweight crypto price monitoring platform designed to provide users with real-time market insights. The application fetches live data from an open-source API and dynamically renders it using React Hooks and functional components.
 
-API integration in React
+This project demonstrates real-world API integration, state management, and responsive UI design.
 
-State management using hooks
+---
 
-Dynamic rendering of large datasets
+## ✨ Features
 
-Clean and responsive UI design
+- 📊 Real-time cryptocurrency price tracking  
+- 💰 Displays market capitalization and 24h price change  
+- 🔄 Live API data fetching  
+- 📱 Fully responsive design (mobile & desktop)  
+- ⚡ Efficient rendering of large datasets  
+- 🎨 Clean and user-friendly UI  
 
-🛠️ Tech Stack
+---
 
-Frontend: React.js
+## 🛠️ Tech Stack
 
-Styling: CSS & Bootstrap
+- **Frontend:** React.js  
+- **Styling:** CSS, Bootstrap  
+- **API:** CoinGecko Public API  
+- **HTTP Client:** Fetch API  
+- **State Management:** React Hooks (`useState`, `useEffect`)  
 
-API: CoinGecko Public API
+---
 
-HTTP Client: Fetch API
+## 🌐 API Used
 
-🌐 API Used
+### CoinGecko Markets API  
+Provides real-time cryptocurrency data including:
+```bash
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+```
 
-CoinGecko Markets A
+👨‍💻 Author
+
+Malka Anjum
+Full-stack Developer
