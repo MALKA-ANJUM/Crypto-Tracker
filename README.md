@@ -29,7 +29,7 @@ This project demonstrates real-world API integration, state management, and resp
 - **Styling:** CSS, Bootstrap  
 - **API:** CoinGecko Public API  
 - **HTTP Client:** Fetch API  
-- **State Management:** React Hooks (`useState`, `useEffect`)  
+- **State Management:** React Hooks
 
 ---
 
