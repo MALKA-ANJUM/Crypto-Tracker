@@ -31,6 +31,8 @@ This project demonstrates real-world API integration, state management, and resp
 - **HTTP Client:** Fetch API  
 - **State Management:** React Hooks
 
+
+
 ---
 
 ## 🌐 API Used
