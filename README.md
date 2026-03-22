@@ -8,7 +8,6 @@ Crypto Tracker is a modern and responsive web application built with **React.js*
 
 Crypto Tracker is a crypto price monitoring platform designed to provide users with real-time market insights. The application fetches live data from an open-source API and dynamically renders it using React Hooks and functional components.
 
-This project demonstrates real-world API integration, state management, and responsive UI design.
 
 ---
 
