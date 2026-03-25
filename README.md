@@ -42,6 +42,9 @@ Provides real-time cryptocurrency data including:
 https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
 ```
 
+
+
+
 👨‍💻 Author
 
 Malka Anjum
