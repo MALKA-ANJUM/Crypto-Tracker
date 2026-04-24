@@ -1,4 +1,4 @@
-# 🚀 Crypto Tracker
+# Crypto Tracker
 
 Crypto Tracker is a modern and responsive web application built with **React.js** that displays real-time cryptocurrency market data. It uses the **CoinGecko Public API** to show live prices, market capitalization, and 24-hour price changes of top cryptocurrencies in USD.
 
